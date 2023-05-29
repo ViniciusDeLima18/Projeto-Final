@@ -1,0 +1,32 @@
+<h2>{{response.titulo}}</h2>
+<hr>
+<a href="/usuario/add" class="btn btn-primary">Novo Usuário</a>
+<br/>
+{{#each response.data}}
+<div class="card mt-2">
+    {{!-- inicio do header --}}
+    <div class="card-header p-2">
+        <div class="row justify-content-between">
+            <div class="col-md-6 my-auto" id="titulo">
+                <h5 class="m-0 ml-2 d-inline-block">{{nome}}</h5>
+            </div>
+            <div class="col-md-6 d-flex flex-row-reverse" id="controle">
+                <a href="/usuario/remove/{{id}}" class="btn btn-danger ms-2">
+                    Deletar
+                </a>
+                <a href="/usuario/update/{{id}}" class="btn btn-success ms-2">
+                    Editar
+                </a>
+                <a href="/usuario/find/{{id}}" class="btn btn-primary ms-2">
+                    Detalhes
+                </a>
+            </div>
+        </div>
+    </div>
+    {{!-- fim do header --}}
+</div>
+{{else}}
+<div class="m-5">
+    <h5>Sem itens cadastrados.</h5>
+</div>
+{{/each}}

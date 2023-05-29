@@ -1,0 +1,23 @@
+
+<h2>{{response.titulo}}</h2>
+<form action="" method="POST">
+    <hr>
+    <label for="nome" class="form-label">Nome:</label>
+    <input type="text" name="nome" id="nome" class="form-control" require placeholder="Digite seu nome" /><br />
+
+    <label for="cpf" class="form-label">CPF:</label>
+    <input type="cpf" name="cpf" id="cpf" class="form-control" require placeholder="Digite seu cpf" /><br />
+
+    <label for="endereco" class="form-label">Endereço:</label>
+    <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite seu endereço" /><br />
+
+    <label for="telefone" class="form-label">Telefone:</label>
+    <input type="tel" name="telefone" id="telefone" class="form-control" placeholder="Digite seu telefone" /><br />
+
+    <label for="email" class="form-label">E-mail:</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" /><br />
+
+    <button type="submit" class="btn btn-success">Salvar</button>
+
+    <a href="/usuario" class="btn btn-danger">Cancelar</a>
+</form>
