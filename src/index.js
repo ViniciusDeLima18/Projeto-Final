@@ -80,3 +80,4 @@ db.sequelize.sync().then(() => {
     console.log("Failed to sync db: " + err.message);
 });
 
+//ola
