@@ -79,5 +79,3 @@ db.sequelize.sync().then(() => {
 }).catch((err) => {
     console.log("Failed to sync db: " + err.message);
 });
-
-//ola
